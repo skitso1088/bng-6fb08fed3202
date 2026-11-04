@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>BumpNGrind — Live TV</title>
+<style>
+*{box-sizing:border-box}
+html,body{position:fixed;top:0;left:0;right:0;bottom:0;margin:0;overflow:hidden;background:#0a0b10;color:#fff;font-family:Arial,Helvetica,sans-serif}
+/* Fixed 1920x1080 stage, scaled + centred by fit() */
+#p{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;padding:40px 64px;visibility:hidden}
+#top{display:flex;align-items:center;gap:30px;height:70px}
+#bk{font-size:34px;font-weight:900;white-space:nowrap;flex:0 0 auto}#bk b{color:#ff5a1f}
+#tabs{flex:1;min-width:0;white-space:nowrap;overflow:hidden}
+.tab{display:inline-block;font-size:27px;padding:10px 20px;margin-right:12px;border-radius:30px;background:#161722;opacity:.7}
+.tab.sel{background:#ff5a1f;color:#111;opacity:1;font-weight:700}
+#list{margin-top:24px;height:816px;overflow:hidden}  /* 8 rows x (92 + 10) */
+.ch{display:flex;align-items:center;gap:26px;height:92px;padding:0 26px;border-radius:16px;margin-bottom:10px;background:#12131b}
+.ch .lg{flex:0 0 120px;height:68px;border-radius:8px;background:#000;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:800;color:#ff5a1f}
+.ch .lg img{width:100%;height:100%;object-fit:contain}
+.ch .tx{flex:1;min-width:0}
+.ch .hd{display:flex;align-items:center;gap:16px;min-width:0}
+.ch .nm{font-size:32px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.ch .live{flex:0 0 auto;font-size:27px;font-weight:800;color:#111;background:#ff5a1f;border-radius:20px;padding:2px 14px;white-space:nowrap;max-width:800px;overflow:hidden;text-overflow:ellipsis}
+.ch .gp{font-size:27px;opacity:.65;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ch .live.dim{background:#2a2d40;color:#fff;font-weight:700}
+.ch .gp.on{opacity:.85}
+.ch.sel{background:#232637;outline:4px solid #fff;outline-offset:-4px}
+#foot{position:absolute;left:64px;right:64px;bottom:36px;display:flex;justify-content:space-between;font-size:27px;opacity:.6}
+#toast{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(10,11,16,.96);border:4px solid #ff5a1f;border-radius:20px;padding:30px 50px;font-size:30px;display:none;text-align:center;max-width:1400px}
+</style>
+</head>
+<body>
+<div id="p">
+  <div id="top"><div id="bk"><b>Bump</b>NGrind · Live TV</div><div id="tabs"></div></div>
+  <div id="list"></div>
+  <div id="foot"><span id="pos"></span><span>↑ ↓ Channel · ← → Group · OK Open · BACK Menu</span></div>
+  <div id="toast"></div>
+</div>
+<script>
+var ALL=[],groups=[],gi=0,chans=[],ci=0,PAGE=8,SCHED={};
+// Scale the 1920x1080 stage to any screen (720p/1080p/4K) with a 5% overscan-safe border.
+function fit(){var d=document.documentElement,w=d.clientWidth||innerWidth,h=d.clientHeight||innerHeight;
+  if(!w||!h)return;var s=Math.min(w/1920,h/1080)*0.9,st=document.getElementById("p").style;
+  st.transform="translate("+(w-1920*s)/2+"px,"+(h-1080*s)/2+"px) scale("+s+")";st.visibility="visible";}
+function $(id){return document.getElementById(id);}
+function esc(s){return String(s||"").replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function toast(m){var t=$("toast");t.textContent=m;t.style.display="block";
+  clearTimeout(window._t);window._t=setTimeout(function(){t.style.display="none";},2500);}
+function drawTabs(){var h="";for(var i=0;i<groups.length;i++)
+    h+='<span class="tab'+(i===gi?' sel':'')+'" onclick="setGroup('+i+')">'+esc(groups[i])+'</span>';
+  $("tabs").innerHTML=h;}
+function setGroup(i){gi=i;drawTabs();chans=[];ci=0;
+  for(var j=0;j<ALL.length;j++)if(ALL[j].group===groups[gi])chans.push(ALL[j]);drawList();}
+function drawList(){var start=Math.max(0,Math.min(ci-3,chans.length-PAGE)),h="";
+  for(var i=start;i<Math.min(start+PAGE,chans.length);i++){var c=chans[i];
+    h+='<div class="ch'+(i===ci?' sel':'')+'" onclick="ci='+i+';drawList();play();"><div class="lg">'
+      +(c.logo?'<img src="'+esc(c.logo)+'" onerror="this.remove()">':(c.lcn||i+1))
+      +'</div>';var w=info(c);
+    h+='<div class="tx"><div class="hd"><div class="nm">'+esc(c.name)+'</div>'+w.tag+'</div><div class="gp'+(w.on?' on':'')+'">'+w.sub+'</div></div></div>';}
+  $("list").innerHTML=h||'<div style="opacity:.5;font-size:26px;padding:40px">No channels</div>';
+  $("pos").textContent=chans.length?(ci+1)+" / "+chans.length+" · "+ALL.filter(function(c){return groups.indexOf(c.group)>=0;}).length+" channels":"";}
+function hm(ms){var d=new Date(ms),now=new Date(),t=d.toLocaleTimeString([], {hour:"numeric",minute:"2-digit"});
+  if(d.toDateString()===now.toDateString())return t;
+  var tm=new Date(now.getTime()+864e5);if(d.toDateString()===tm.toDateString())return "Tomorrow "+t;
+  return d.toLocaleDateString([], {weekday:"short"})+" "+t;}
+// What's on now (a live match beats a guide programme) and what's next.
+function onNow(i){var l=SCHED[i]||[],now=Date.now(),cur=null,next=null;
+  for(var k=0;k<l.length;k++){var e=l[k];
+    if(e.a<=now&&now<e.b){if(!cur||(e.k==="e"&&cur.k!=="e"))cur=e;}
+    else if(e.a>now&&(!next||e.a<next.a))next=e;}
+  if(cur)for(var j=0,best=null;j<l.length;j++){var x=l[j]; // next *different* programme
+    if(x.a>=cur.b&&x.h!==cur.h&&(!best||x.a<best.a))best=x; next=best;}
+  return {cur:cur,next:next};}
+function info(c){var w=onNow(c.i),cur=w.cur,nx=w.next;
+  if(cur)return {on:true,
+    tag:'<span class="live'+(cur.l?'':' dim')+'">'+(cur.l?'LIVE · ':'')+esc(cur.h)+'</span>',
+    sub:(cur.d?esc(cur.d)+' · ':'')+'until '+hm(cur.b)+(nx?' · Next '+hm(nx.a)+' '+esc(nx.h):'')};
+  if(nx)return {on:false,tag:'',sub:'Next '+hm(nx.a)+' · '+esc(nx.h)+(nx.d?' · '+esc(nx.d):'')};
+  return {on:false,tag:'',sub:'No events listed'};}
+function loadSchedule(){try{SCHED=JSON.parse(Android.getSchedule())||{};}catch(e){SCHED={};}}
+function onSchedule(){loadSchedule();drawList();}
+function play(){var c=chans[ci];if(!c||!window.Android)return;toast("▶ "+c.name);Android.play(c.i);}
+document.onkeydown=function(e){var k=e.keyCode;
+  if(k===38){if(ci>0){ci--;drawList();}}
+  else if(k===40){if(ci<chans.length-1){ci++;drawList();}}
+  else if(k===37){if(gi>0)setGroup(gi-1);}
+  else if(k===39){if(gi<groups.length-1)setGroup(gi+1);}
+  else if(k===13||k===23){play();}
+  else if(k===8||k===27){location.href="home.html";}
+  else return;
+  e.preventDefault();};
+// tv.html = sport tabs; tv.html#fta = the free-to-air TV section (opened from the Home "TV" tile)
+var FTA=location.hash==="#fta";
+try{var d=JSON.parse(Android.getChannels());ALL=d.channels||[];
+  groups=(d.groups||[]).filter(function(g){return (g.indexOf("Free to Air")===0)===FTA;});}catch(e){toast("Channel list unavailable");}
+if(FTA){document.getElementById("bk").innerHTML="<b>Bump</b>NGrind · Free to Air TV";document.title="BumpNGrind — Free to Air TV";}
+loadSchedule();setGroup(0);fit();setInterval(drawList,60000); // LIVE tags follow the clock
+onresize=fit;onload=fit;setTimeout(fit,500);
+</script>
+</body>
+</html>

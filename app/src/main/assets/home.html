@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>BumpNGrind</title>
+<style>
+*{box-sizing:border-box}
+html,body{position:fixed;top:0;left:0;right:0;bottom:0;margin:0;overflow:hidden;color:#fff;
+  background:#0a0b10 radial-gradient(70% 70% at 78% -5%,#241a2e 0%,#12111b 45%,#0a0b10 80%) no-repeat;font-family:Arial,Helvetica,sans-serif}
+/* Fixed 1920x1080 stage, scaled + centred by fit() */
+#p{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;padding:80px 110px;visibility:hidden}
+#brand{font-size:72px;font-weight:900;letter-spacing:-1px;line-height:1.1}
+#brand b{color:#ff5a1f}#brand i{color:#ffd23f;font-style:normal}
+#tag{font-size:27px;opacity:.55;margin-top:8px;letter-spacing:3px;text-transform:uppercase}
+.row{display:flex;gap:24px;margin-top:90px}
+.tile{width:380px;height:330px;border-radius:26px;padding:40px;position:relative;
+      background:#161722;border:5px solid transparent;overflow:hidden;transition:transform .09s}
+.tile .ico{font-size:88px;line-height:1}
+.tile .nm{font-size:36px;font-weight:800;margin-top:28px;white-space:nowrap}
+.tile .ds{font-size:27px;opacity:.7;margin-top:10px;line-height:1.25}
+.tile .glow{position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;filter:blur(30px);opacity:.5}
+.t0 .glow{background:#ff5a1f}.t2 .glow{background:#19c37d}
+.tile.sel{border-color:#fff;transform:translateY(-10px) scale(1.03);box-shadow:0 26px 60px rgba(0,0,0,.6)}
+.tile.off{opacity:.55}
+#hint{position:absolute;left:110px;bottom:64px;font-size:27px;opacity:.6}
+#toast{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(10,11,16,.96);border:4px solid #ff5a1f;border-radius:20px;padding:30px 50px;font-size:30px;display:none}
+</style>
+</head>
+<body>
+<div id="p">
+  <div id="brand"><b>Bump</b><i>N</i>Grind</div>
+  <div id="tag">Sport made simple</div>
+  <div class="row" id="r"></div>
+  <div id="hint">&larr; &rarr; Browse &nbsp;&nbsp; OK Open &nbsp;&nbsp; BACK Exit</div>
+  <div id="toast"></div>
+</div>
+<script>
+var items=[
+  {cls:"t0",ico:"📺",nm:"Live TV",  ds:"65 sports channels",       url:"tv.html"},
+  {cls:"t2",ico:"📡",nm:"Free to Air TV", ds:"34 NZ &amp; Australian channels", url:"tv.html#fta"}
+];
+var p=0;
+// Scale the 1920x1080 stage to any screen (720p/1080p/4K) with a 5% overscan-safe border.
+function fit(){var d=document.documentElement,w=d.clientWidth||innerWidth,h=d.clientHeight||innerHeight;
+  if(!w||!h)return;var s=Math.min(w/1920,h/1080)*0.9,st=document.getElementById("p").style;
+  st.transform="translate("+(w-1920*s)/2+"px,"+(h-1080*s)/2+"px) scale("+s+")";st.visibility="visible";}
+function go(i){var t=items[i];if(t.url)location.href=t.url;else toast(t.nm+" coming soon");}
+function toast(m){var t=document.getElementById("toast");t.textContent=m;t.style.display="block";
+  clearTimeout(window._t);window._t=setTimeout(function(){t.style.display="none";},2000);}
+function render(){var h="";for(var i=0;i<items.length;i++){var t=items[i];
+  h+='<div class="tile '+t.cls+(i===p?' sel':'')+(t.url?'':' off')+'" onclick="go('+i+')"><div class="glow"></div>'
+    +'<div class="ico">'+t.ico+'</div><div class="nm">'+t.nm+'</div><div class="ds">'+t.ds+'</div></div>';}
+  document.getElementById("r").innerHTML=h;}
+document.onkeydown=function(e){var k=e.keyCode;
+  if(k===37){if(p>0){p--;render();}}
+  else if(k===39){if(p<items.length-1){p++;render();}}
+  else if(k===13||k===23){go(p);}
+  else return;
+  e.preventDefault();};
+render();fit();onresize=fit;onload=fit;setTimeout(fit,500);
+</script>
+</body>
+</html>

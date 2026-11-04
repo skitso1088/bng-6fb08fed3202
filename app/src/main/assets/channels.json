@@ -1,0 +1,783 @@
+[
+  {
+    "name": "CBS GOALZO International",
+    "page_url": "https://tflix.su/channel/cbs-goalzo-e18dac02",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:562308"
+  },
+  {
+    "name": "CBS GOLAZO AQ English",
+    "page_url": "https://tflix.su/channel/cbs-sports-5f939c6d",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:562308"
+  },
+  {
+    "name": "CBS Sports Network International",
+    "page_url": "https://tflix.su/channel/cbs-sports-network-a50ccbbe",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:464937"
+  },
+  {
+    "name": "FOX SPORTS 1 International",
+    "page_url": "https://tflix.su/channel/fox-sports-1-9ef31b3b",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:465291"
+  },
+  {
+    "name": "FOX SPORTS 2 International",
+    "page_url": "https://tflix.su/channel/fox-sports-2-e598b7d9",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:465355"
+  },
+  {
+    "name": "FOX SPORTS 2 AQ International",
+    "page_url": "https://tflix.su/channel/fox-sports-2-aq-aabe6a2a",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:465355"
+  },
+  {
+    "name": "Fox Soccer Plus International",
+    "page_url": "https://tflix.su/channel/fox-soccer-plus-6f687086",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:465214"
+  },
+  {
+    "name": "Fox Sports 501 International",
+    "page_url": "https://tflix.su/channel/fox-sports-501-00fd20db",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:FoxCricket.au"
+  },
+  {
+    "name": "Fox Sports 502 International",
+    "page_url": "https://tflix.su/channel/fox-sports-502-e4ff108d",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:FoxLeague.au"
+  },
+  {
+    "name": "Fox Sports 503 International",
+    "page_url": "https://tflix.su/channel/fox-sports-503-0e98187d",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:FoxSports503.au"
+  },
+  {
+    "name": "Fox Sports 504 International",
+    "page_url": "https://tflix.su/channel/fox-sports-504-22b9436b",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:FoxFooty.au"
+  },
+  {
+    "name": "Fox Sports 505 International",
+    "page_url": "https://tflix.su/channel/fox-sports-505-57417b31",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:FoxSports505.au"
+  },
+  {
+    "name": "Fox Sports 506 International",
+    "page_url": "https://tflix.su/channel/fox-sports-506-4ba94b74",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:FoxSports506.au"
+  },
+  {
+    "name": "Fox Sports 507 International",
+    "page_url": "https://tflix.su/channel/fox-sports-507-cf3bdb84",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:FoxSportsMore.au"
+  },
+  {
+    "name": "Premier Sports 1 International",
+    "page_url": "https://tflix.su/channel/premier-sports-1-7ad4034c",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Premier Sports 1 AQ International",
+    "page_url": "https://tflix.su/channel/premier-sports-1-aq-6b06e8a7",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Premier Sports 2 International",
+    "page_url": "https://tflix.su/channel/premier-sports-2-b6518648",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Premier Sports 2 AQ International",
+    "page_url": "https://tflix.su/channel/premier-sports-2-aq-3ec963a9",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sport 1 NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-1-nz-430bd109",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sport 2 NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-2-nz-bf5ffc96",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sport 3 NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-3-nz-48e372f8",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sport 4 NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-4-nz-ce1bdeac",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sport 5 NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-5-nz-c4d6c553",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sport 6 NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-6-nz-91d58e3c",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sport 7 NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-7-nz-f604f14f",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sport 8 NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-8-nz-8230cc3b",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sport 9 NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-9-nz-386d6d74",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sport Select NZ International",
+    "page_url": "https://tflix.su/channel/sky-sport-select-nz-3237a0b5",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "New Zealand"
+  },
+  {
+    "name": "Sky Sports Action/NFL International",
+    "page_url": "https://tflix.su/channel/sky-sports-action-fhd-c91ee74d",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Cricket FHD International",
+    "page_url": "https://tflix.su/channel/sky-sports-cricket-fhd-32675e94",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports F1 FHD International",
+    "page_url": "https://tflix.su/channel/sky-sports-f1-fhd-7177200f",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Football FHD International",
+    "page_url": "https://tflix.su/channel/sky-sports-football-fhd-0f0c1894",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Golf FHD International",
+    "page_url": "https://tflix.su/channel/sky-sports-golf-fhd-2512a6bd",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Main Event FHD International",
+    "page_url": "https://tflix.su/channel/sky-sports-main-event-fhd-34cd051a",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Main Event Ultra International",
+    "page_url": "https://tflix.su/channel/sky-sports-main-event-ultra-9da3ed37",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Mix FHD International",
+    "page_url": "https://tflix.su/channel/sky-sports-mix-fhd-465c8f3f",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports News FHD International",
+    "page_url": "https://tflix.su/channel/sky-sports-news-fhd-e8b0c28b",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Plus FHD International",
+    "page_url": "https://tflix.su/channel/sky-sports-plus-fhd-cc8ceab4",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Premier League FHD International",
+    "page_url": "https://tflix.su/channel/sky-sports-premier-league-fhd-f7a57c88",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Racing International",
+    "page_url": "https://tflix.su/channel/sky-sports-racing-ed13e192",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "Sky Sports Tennis International",
+    "page_url": "https://tflix.su/channel/sky-sports-tennis-92642a26",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TBS USA International",
+    "page_url": "https://tflix.su/channel/tbs-usa-45f705a1",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:465285"
+  },
+  {
+    "name": "TNT SPORTS 1 International",
+    "page_url": "https://tflix.su/channel/tnt-sports-1-f9df77ee",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 1 AQ International",
+    "page_url": "https://tflix.su/channel/tnt-sports-1-aq-719f55d4",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 2 UK English",
+    "page_url": "https://tflix.su/channel/tnt-sports-2-f0c1361d",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 2 AQ English",
+    "page_url": "https://tflix.su/channel/tnt-sports-2-aq-945a68e5",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 3 International",
+    "page_url": "https://tflix.su/channel/tnt-sports-3-8673c919",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 3 AQ International",
+    "page_url": "https://tflix.su/channel/tnt-sports-3-aq-9a953d94",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 4 International",
+    "page_url": "https://tflix.su/channel/tnt-sports-4-0fe02417",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 4 AQ International",
+    "page_url": "https://tflix.su/channel/tnt-sports-4-aq-e0e4d4d6",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 5 International",
+    "page_url": "https://tflix.su/channel/tnt-sports-5-197abada",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 6 International",
+    "page_url": "https://tflix.su/channel/tnt-sports-6-5a6ca097",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 7 International",
+    "page_url": "https://tflix.su/channel/tnt-sports-7-688c03ef",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT SPORTS 8 International",
+    "page_url": "https://tflix.su/channel/tnt-sports-8-2cbc057f",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "UK"
+  },
+  {
+    "name": "TNT USA International",
+    "page_url": "https://tflix.su/channel/tnt-usa-e683ccb0",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:465114"
+  },
+  {
+    "name": "Willow FHD International",
+    "page_url": "https://tflix.su/channel/willow-fhd-985145df",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "USA",
+    "epg": "epgpw:465010"
+  },
+  {
+    "name": "beIN ENG 1 AU - AQ International",
+    "page_url": "https://tflix.su/channel/bein-eng-1-au-aq-4220d834",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:beINSports1.au"
+  },
+  {
+    "name": "beIN ENG 2 AU - AQ International",
+    "page_url": "https://tflix.su/channel/bein-eng-2-au-aq-a6be3183",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:beINSports2.au"
+  },
+  {
+    "name": "beIN ENG 3 AU - AQ International",
+    "page_url": "https://tflix.su/channel/bein-eng-3-au-aq-7375cedf",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Australia",
+    "epg": "au1:beINSports3.au"
+  },
+  {
+    "name": "10",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/10-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 10,
+    "epg": "mjh:mjh-10-qld"
+  },
+  {
+    "name": "10 Comedy",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/10peach-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 11,
+    "epg": "mjh:mjh-10peach-qld"
+  },
+  {
+    "name": "10 Drama",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/10bold-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 12,
+    "epg": "mjh:mjh-10bold-qld"
+  },
+  {
+    "name": "Nickelodeon",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/10shake-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 13,
+    "epg": "mjh:mjh-10shake-qld"
+  },
+  {
+    "name": "ABC TV",
+    "type": "stream",
+    "stream_url": "https://c.mjh.nz/abc-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 21,
+    "epg": "mjh:mjh-abc-qld"
+  },
+  {
+    "name": "ABC Family",
+    "type": "stream",
+    "stream_url": "https://c.mjh.nz/abc-tv-plus.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 22,
+    "epg": "mjh:mjh-abc-tv-plus"
+  },
+  {
+    "name": "ABC Kids",
+    "type": "stream",
+    "stream_url": "https://c.mjh.nz/abc-kids.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 22,
+    "epg": "mjh:mjh-abc-kids"
+  },
+  {
+    "name": "ABC Entertains",
+    "type": "stream",
+    "stream_url": "https://c.mjh.nz/abc-me.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 23,
+    "epg": "mjh:mjh-abc-me"
+  },
+  {
+    "name": "ABC NEWS",
+    "type": "stream",
+    "stream_url": "https://c.mjh.nz/abc-news.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 24,
+    "epg": "mjh:mjh-abc-news"
+  },
+  {
+    "name": "SBS",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/sbs-sbst.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 30,
+    "epg": "mjh:mjh-sbs-sbst"
+  },
+  {
+    "name": "SBS2",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/sbs-2syd.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 31,
+    "epg": "mjh:mjh-sbs-2syd"
+  },
+  {
+    "name": "SBS World Movies",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/sbs-4syd.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 32,
+    "epg": "mjh:mjh-sbs-4syd"
+  },
+  {
+    "name": "SBS Food",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/sbs-3syd.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 33,
+    "epg": "mjh:mjh-sbs-3syd"
+  },
+  {
+    "name": "NITV",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/sbs-5nsw.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 34,
+    "epg": "mjh:mjh-sbs-5nsw"
+  },
+  {
+    "name": "Seven",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/seven-bri.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 71,
+    "epg": "mjh:mjh-seven-bri"
+  },
+  {
+    "name": "7two",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/7two-bri.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 72,
+    "epg": "mjh:mjh-7two-bri"
+  },
+  {
+    "name": "7mate",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/7mate-bri.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 74,
+    "epg": "mjh:mjh-7mate-bri"
+  },
+  {
+    "name": "7Bravo",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/7bravo-fast.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 75,
+    "epg": "mjh:mjh-7bravo-fast"
+  },
+  {
+    "name": "7flix",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/7flix-bri.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 76,
+    "epg": "mjh:mjh-7flix-bri"
+  },
+  {
+    "name": "Racing.com",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/racing-fast.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 78,
+    "epg": "mjh:mjh-racing-fast"
+  },
+  {
+    "name": "Channel 9",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/channel-9-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 91,
+    "epg": "mjh:mjh-channel-9-qld"
+  },
+  {
+    "name": "9Gem",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/gem-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 92,
+    "epg": "mjh:mjh-gem-qld"
+  },
+  {
+    "name": "9Go!",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/go-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 93,
+    "epg": "mjh:mjh-go-qld"
+  },
+  {
+    "name": "9Life",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/life-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 94,
+    "epg": "mjh:mjh-life-qld"
+  },
+  {
+    "name": "9Rush",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/rush-qld.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air Australia",
+    "lcn": 96,
+    "epg": "mjh:mjh-rush-qld"
+  },
+  {
+    "name": "Whakaata Māori",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/maori-tv.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air NZ",
+    "lcn": 5,
+    "epg": "mjhnz:mjh-maori-tv"
+  },
+  {
+    "name": "Te Reo",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/te-reo.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air NZ",
+    "lcn": 10,
+    "epg": "mjhnz:mjh-te-reo"
+  },
+  {
+    "name": "HGTV",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/sky-hgtv.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air NZ",
+    "lcn": 19,
+    "epg": "mjhnz:mjh-sky-hgtv"
+  },
+  {
+    "name": "Al Jazeera",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/al-jazeera.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air NZ",
+    "lcn": 20,
+    "epg": "mjhnz:mjh-al-jazeera"
+  },
+  {
+    "name": "Firstlight",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/firstlight.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air NZ",
+    "lcn": 26,
+    "epg": "mjhnz:mjh-firstlight"
+  },
+  {
+    "name": "Parliament TV",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/parliament-tv.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air NZ",
+    "lcn": 31,
+    "epg": "mjhnz:mjh-parliament-tv"
+  },
+  {
+    "name": "JuiceTV",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/mood-1290.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air NZ",
+    "lcn": 38,
+    "epg": "mjhnz:mjh-mood-1290"
+  },
+  {
+    "name": "Wairarapa TV",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/wairarapa-tv.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air NZ",
+    "lcn": 41,
+    "epg": "mjhnz:mjh-wairarapa-tv"
+  },
+  {
+    "name": "CH200",
+    "type": "stream",
+    "stream_url": "https://i.mjh.nz/.r/ch200.m3u8",
+    "source": "i.mjh.nz (official broadcaster streams)",
+    "group": "Free to Air NZ",
+    "lcn": 200,
+    "epg": "mjhnz:mjh-ch200"
+  },
+  {
+    "name": "ONE SOCCER International",
+    "page_url": "https://tflix.su/channel/one-soccer-90dcb172",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Canada"
+  },
+  {
+    "name": "TSN 1 AQ International",
+    "page_url": "https://tflix.su/channel/tsn-1-aq-0e9920a0",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Canada"
+  },
+  {
+    "name": "TSN 2 AQ International",
+    "page_url": "https://tflix.su/channel/tsn-2-aq-f30e79a3",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Canada"
+  },
+  {
+    "name": "TSN 3 AQ International",
+    "page_url": "https://tflix.su/channel/tsn-3-aq-a3d86c73",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Canada"
+  },
+  {
+    "name": "TSN 4 AQ International",
+    "page_url": "https://tflix.su/channel/tsn-4-aq-d6ce48bb",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Canada"
+  },
+  {
+    "name": "TSN 5 AQ International",
+    "page_url": "https://tflix.su/channel/tsn-5-aq-2177f0d3",
+    "source": "TFLIX",
+    "type": "channel_page",
+    "group": "Canada"
+  }
+]

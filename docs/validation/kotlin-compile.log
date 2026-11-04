@@ -1,0 +1,12 @@
+app/src/main/java/com/bumpngrind/tv/ChannelPageActivity.kt:106:43: warning: 'addDocumentStartJavaScript(WebView, String, (Mutable)Set<String!>): ScriptHandler' is deprecated. Deprecated in Java
+            androidx.webkit.WebViewCompat.addDocumentStartJavaScript(web, UNMUTE_JS + FILL_PLAYER_JS, setOf("*"))
+                                          ^
+app/src/main/java/com/bumpngrind/tv/MainActivity.kt:44:13: warning: 'setter for allowFileAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java
+            allowFileAccessFromFileURLs = false
+            ^
+app/src/main/java/com/bumpngrind/tv/MainActivity.kt:45:13: warning: 'setter for allowUniversalAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java
+            allowUniversalAccessFromFileURLs = false
+            ^
+app/src/main/java/com/bumpngrind/tv/MainActivity.kt:155:20: warning: 'onBackPressed(): Unit' is deprecated. Deprecated in Java
+        else super.onBackPressed()
+                   ^
